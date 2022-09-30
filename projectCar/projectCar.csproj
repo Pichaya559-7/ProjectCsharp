@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5A234687-37F5-4996-B84D-E87D684D76F1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>projectCar</RootNamespace>
+    <AssemblyName>projectCar</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form17calculate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form17calculate.Designer.cs">
+      <DependentUpon>Form17calculate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form18Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form18Edit.Designer.cs">
+      <DependentUpon>Form18Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form16Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form16Admin.Designer.cs">
+      <DependentUpon>Form16Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form19Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form19Menu.Designer.cs">
+      <DependentUpon>Form19Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1Login.Designer.cs">
+      <DependentUpon>Form1Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form20stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form20stock.Designer.cs">
+      <DependentUpon>Form20stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form21showroom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form21showroom.Designer.cs">
+      <DependentUpon>Form21showroom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form22cars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form22cars.Designer.cs">
+      <DependentUpon>Form22cars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form23bookcar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form23bookcar.Designer.cs">
+      <DependentUpon>Form23bookcar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2Register.Designer.cs">
+      <DependentUpon>Form2Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form17calculate.resx">
+      <DependentUpon>Form17calculate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form18Edit.resx">
+      <DependentUpon>Form18Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form16Admin.resx">
+      <DependentUpon>Form16Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form19Menu.resx">
+      <DependentUpon>Form19Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1Login.resx">
+      <DependentUpon>Form1Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form20stock.resx">
+      <DependentUpon>Form20stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form21showroom.resx">
+      <DependentUpon>Form21showroom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form22cars.resx">
+      <DependentUpon>Form22cars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form23bookcar.resx">
+      <DependentUpon>Form23bookcar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2Register.resx">
+      <DependentUpon>Form2Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5 2018 Honda CR-V S 2WD  2.4.avif" />
+    <None Include="Resources\N2-2021 Mercedes-Benz A 200 AMG DYNAMIC 1.3 Silver.webp" />
+    <None Include="Resources\ดีไซน์ที่ไม่มีชื่อ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\10 2018 Honda CITY SV+ 1.5.jpg" />
+    <Content Include="Resources\11 2019 Toyota YARIS J 1.2.jpg" />
+    <Content Include="Resources\12 2019 Toyota YARIS HIGHT 1.2.jpg" />
+    <None Include="Resources\296780180_1421459545029999_6010885265083540359_n.jpg" />
+    <None Include="Resources\296780180_1421459545029999_6010885265083540359_n1.jpg" />
+    <Content Include="Resources\3 2021 Mercedes-Benz A 200 AMG DYNAMIC 1.3 Gray.jpg" />
+    <Content Include="Resources\4 2018 BMW X1 SDRIVE18D XLINE 2.0.jpg" />
+    <Content Include="Resources\5 2018 Honda CR-V S 2WD  2.4.jpg" />
+    <Content Include="Resources\6 2018 Isuzu MU-X THE ICONIC DDI DA DVD NAVI 3.0.jpg" />
+    <Content Include="Resources\7 2019 Nissan ALMERA E SPORTECH 1.2.jpg" />
+    <Content Include="Resources\8 2018 Nissan NMARCH E 1.2.jpg" />
+    <Content Include="Resources\9 2018 Toyota YARIS ATIV J 1.2.jpg" />
+    <None Include="Resources\lovepik-back-button-arrow-png-image_401156316_wh1200.png" />
+    <Content Include="Resources\N1-2021 Mercedees-Benz E 300E AMG 2.0.jpg" />
+    <Content Include="Resources\N222021 Mercedes-Benz A 200 AMG DYNAMIC 1.3 Silver.jpg" />
+    <None Include="Resources\สีดำ สีน้ำตาล มันขลับและมืออาชีพ พื้นฐาน เรียบง่าย งานนำเสนอ.png" />
+    <None Include="Resources\Stars in the Universe Galaxy Zoom Virtual Background %281%29.png" />
+    <None Include="Resources\Stars in the Universe Galaxy Zoom Virtual Background.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
